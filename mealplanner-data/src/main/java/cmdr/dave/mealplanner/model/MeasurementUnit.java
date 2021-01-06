@@ -1,4 +1,4 @@
-package model;
+package cmdr.dave.mealplanner.model;
 
 /**
  * @author dcass

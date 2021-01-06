@@ -1,4 +1,4 @@
-package model;
+package cmdr.dave.mealplanner.model;
 
 import lombok.Data;
 
@@ -9,10 +9,11 @@ import java.util.Set;
  * @author dcass
  */
 @Data
-public class Recipe {
+public class Recipe extends BaseEntity{
+
     private String name;
     private String description;
-
     private Set<RecipeIngredient> ingredients;
     private List<String> instructions;
+
 }
