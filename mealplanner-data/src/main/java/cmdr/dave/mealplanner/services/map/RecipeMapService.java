@@ -2,12 +2,14 @@ package cmdr.dave.mealplanner.services.map;
 
 import cmdr.dave.mealplanner.model.Recipe;
 import cmdr.dave.mealplanner.services.RecipeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * @author dcass
  */
+@Service
 public class RecipeMapService extends AbstractMapService<Recipe, Long> implements RecipeService {
     @Override
     public Set<Recipe> findAll() {

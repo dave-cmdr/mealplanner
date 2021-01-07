@@ -6,4 +6,5 @@ import cmdr.dave.mealplanner.model.Ingredient;
  * @author dcass
  */
 public interface IngredientService extends CrudService<Ingredient, Long> {
+    Ingredient findByName(String name);
 }

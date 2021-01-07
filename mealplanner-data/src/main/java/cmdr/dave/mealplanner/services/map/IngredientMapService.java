@@ -36,4 +36,10 @@ public class IngredientMapService extends AbstractMapService<Ingredient, Long> i
     public void deleteById(Long id) {
         super.deleteById(id);
     }
+
+
+    @Override
+    public Ingredient findByName(String name) {
+        return findAll().stream().filter(ingredient -> ingredient.getName().equals(name)).findFirst().orElse(null);
+    }
 }
